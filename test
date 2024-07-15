@@ -5,6 +5,7 @@ public class LoginActivity extends AppCompatActivity {
         String password = passwordEditText.getText().toString();
         if (!isValidPassword(password)) {
             Utils.showErrorToast(this, "Invalid password");
+            Utils.showErrorToast(this, "ERROR！！");
             return;
         }
         ...
